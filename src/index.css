@@ -1,0 +1,86 @@
+:root {
+  /* Colors */
+  --text: #6b7280;
+  --text-h: #111827;
+  --bg: #f9fafb;
+  --border: #e5e7eb;
+  --card-bg: #ffffff;
+  --navbar-bg: rgba(255, 255, 255, 0.85);
+  --input-bg: #f3f4f6;
+  --btn-bg: #f9fafb;
+
+  /* Accent */
+  --accent: #7c3aed;
+  --accent-bg: rgba(124, 58, 237, 0.1);
+  --accent-border: rgba(124, 58, 237, 0.35);
+
+  /* Shadow */
+  --shadow:
+    rgba(0, 0, 0, 0.08) 0 10px 30px -5px,
+    rgba(0, 0, 0, 0.04) 0 4px 8px -2px;
+
+  /* Typography */
+  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/1.6 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  color-scheme: light dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f9fafb;
+    --bg: #0f1117;
+    --border: #1f2937;
+    --card-bg: #161b27;
+    --navbar-bg: rgba(15, 17, 23, 0.85);
+    --input-bg: #1f2937;
+    --btn-bg: #1f2937;
+
+    --accent: #a78bfa;
+    --accent-bg: rgba(167, 139, 250, 0.12);
+    --accent-border: rgba(167, 139, 250, 0.35);
+
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 30px -5px,
+      rgba(0, 0, 0, 0.25) 0 4px 8px -2px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: var(--sans);
+}
+
+input {
+  font-family: var(--sans);
+}
